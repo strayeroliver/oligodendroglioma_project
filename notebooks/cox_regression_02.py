@@ -8,8 +8,6 @@
 import matplotlib
 matplotlib.use('Agg')  # To save files
 import matplotlib.pyplot as plt
-import os
-os.chdir('/home/oliver/oligodendroglioma_project')  
 import pandas as pd
 from lifelines import KaplanMeierFitter, CoxPHFitter
 import json

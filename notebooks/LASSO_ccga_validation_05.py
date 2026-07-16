@@ -4,11 +4,9 @@
 
 import matplotlib
 matplotlib.use('Agg')  
-import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from lifelines import KaplanMeierFitter
-os.chdir('/home/oliver/oligodendroglioma_project')
 from lifelines import CoxPHFitter
 
 # Copy-pasted from earlier

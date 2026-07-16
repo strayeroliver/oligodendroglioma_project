@@ -7,8 +7,6 @@ import matplotlib.pyplot as plt
 from lifelines import KaplanMeierFitter # Had to do research on how to use Kaplan Meier Fitter https://lifelines.readthedocs.io/en/latest/fitters/univariate/KaplanMeierFitter.html
 
 import pandas as pd
-import os
-os.chdir('/home/oliver/oligodendroglioma_project')
 
 #loading in and analysis of TCGA dataset: https://pmc.ncbi.nlm.nih.gov/articles/PMC6066282/
 # https://xenabrowser.net/datapages/?cohort=TCGA%20Lower%20Grade%20Glioma%20(LGG)&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443

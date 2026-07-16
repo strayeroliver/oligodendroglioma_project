@@ -4,8 +4,6 @@
 
 import matplotlib
 matplotlib.use('Agg')  
-import os
-os.chdir('/home/oliver/oligodendroglioma_project')
 import pandas as pd
 import matplotlib.pyplot as plt
 from lifelines import CoxPHFitter
