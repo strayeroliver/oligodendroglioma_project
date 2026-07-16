@@ -16,6 +16,8 @@ To find new, novel answers and create a multivariable tool that clinicians can u
 
 Create and activate a virtual environment:  
   ```
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   bash Miniconda3-latest-Linux-x86_64.sh
    conda create -n oligodendroglioma python=3.11
    conda activate oligodendroglioma
 ```
