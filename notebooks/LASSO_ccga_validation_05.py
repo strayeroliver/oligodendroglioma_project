@@ -77,7 +77,7 @@ for mask, name, color in groups:
     kmf.fit(cgga_rna_df.loc[mask, 'OS'], cgga_rna_df.loc[mask, 'dead'], label=name)
     kmf.plot_survival_function(ax=ax, color=color, lw=2.5, ci_show=True) 
 
-plt.title('OS CGGA RNA Seperation', pad=12, fontsize=14, weight='bold')
+plt.title('CGGA Validation (n=171): High vs Low Risk Groups\nLog-rank p = 0.030', pad=12, fontsize=14, weight='bold')
 plt.xlabel('OS Time in Days', fontsize=12)
 plt.ylabel('Survival Probability', fontsize=12)
 plt.grid(True, linestyle=':', alpha=0.5)

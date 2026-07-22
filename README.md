@@ -18,9 +18,12 @@ Create and activate a virtual environment:
   ```
    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
    bash Miniconda3-latest-Linux-x86_64.sh
+```
+Then restart your teminal:
+```
    conda create -n oligodendroglioma python=3.11
    conda activate oligodendroglioma
-```
+   ```
 
 Install required python packages:  
 ```
@@ -37,18 +40,18 @@ sudo apt install r-base r-base-dev -y
 To get the code and data required:
 ```
 git clone https://github.com/strayeroliver/oligodendroglioma_project.git
-cd oligodendroglioma_project/notebooks
+cd oligodendroglioma_project
 ```
 ## Running the Analysis
 To follow along with my journey, simply run the notebooks in the following order:
 
 ```
-python data_loading_01.py
-python cox_regression_02.py
-python CGGA_validatoin_03.py
-python rna_analysis_04.py
-Rscript LASSO_cox_04.R 
-python...
+python notebooks/data_loading_01.py
+python notebooks/cox_regression_02.py
+python notebooks/CGGA_validatoin_03.py
+python notebooks/rna_analysis_04.py
+Rscript notebooks/LASSO_cox_04.R 
+python notebooks/...
 ```
 
 And so forth.  
