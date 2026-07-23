@@ -36,6 +36,12 @@ sudo apt update
 sudo apt install r-base r-base-dev -y
 ```
 
+## Accessing Data
+
+The data used is within the TCGA-LGG and CGGA databases. You can download publicly, but due to privacy reasons I cannot attach them myself. 
+
+There are instructions in data_README.md.
+
 ## Clone the Repository
 To get the code and data required:
 ```
