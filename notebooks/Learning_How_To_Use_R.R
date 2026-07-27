@@ -5,7 +5,7 @@ library(survival) # https://www.statology.org/lasso-regression-in-r/, https://ww
 library(readr)
 
 # This is similar to pd.read_csv essentially just creates a basic dataframe
-df <- read.csv("/home/oliver/oligodendroglioma_project/data/TCGA/rnaseq_survival_ready.csv")
+df <- read.csv("data/TCGA/rnaseq_survival_ready.csv")
 
 # Here, from the stanford resource:
 # X stands for the input matrix, where its purely numbers

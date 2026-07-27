@@ -35,6 +35,11 @@ You will also need R for this project, so:
 sudo apt update
 sudo apt install r-base r-base-dev -y
 ```
+And once inside R, inside the terminal:
+```
+install.packages(c("glmnet", "survival", "readr"))
+```
+
 
 ## Accessing Data
 

@@ -2,7 +2,7 @@ library(glmnet) # https://www.serdarbalci.com/jsurvival/articles/09-lassocox-com
 library(survival) # https://www.statology.org/lasso-regression-in-r/, https://www.youtube.com/watch?v=5GZ5BHOugBQ
 library(readr)
 
-df <- read.csv("/home/oliver/oligodendroglioma_project/data/TCGA/rnaseq_survival_ready.csv")
+df <- read.csv("data/TCGA/rnaseq_survival_ready.csv")
 
 X <- as.matrix(df[, !colnames(df) %in% c("sampleID", "PFI", "PFI.time")]) # Requires numeric values only for this part, Input matrix X
 Y <- Surv(time = df$PFI.time, event = df$PFI) # this is where the 'clinical' data comes in (PFI, etc), response matrix Y https://glmnet.stanford.edu/articles/glmnet.html
