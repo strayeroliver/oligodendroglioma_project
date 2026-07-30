@@ -1,4 +1,4 @@
 results/
-figures/
 __pycache__/
+data/
 *.pyc.ipynb_checkpoints/

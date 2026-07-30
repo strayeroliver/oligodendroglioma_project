@@ -5,8 +5,8 @@ library(survival) # https://www.statology.org/lasso-regression-in-r/, https://ww
 library(readr)
 
 # This is similar to pd.read_csv essentially just creates a basic dataframe
-df <- read.csv("data/TCGA/rnaseq_survival_ready.csv")
-
+data_path <- "~/oligodendroglioma_project/data/TCGA/rnaseq_survival_ready.csv"
+df <- read.csv(data_path)
 # Here, from the stanford resource:
 # X stands for the input matrix, where its purely numbers
 # Y stands for the response vector Y with the results that come from the specific genes.
@@ -19,3 +19,4 @@ fit <- glmnet(X, Y, family = "cox")
 # This helps me visualize what glmnet and lambdas are actually doing to my data:
 
 plot(fit)
+

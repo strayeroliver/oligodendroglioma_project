@@ -11,26 +11,27 @@ The end goal is to analyze:
 6. Methylation data of all patients, describing their position near the promoter region
 
 To find new, novel answers and create a multivariable tool that clinicians can use to predict oligodendroglioma patient's survival length and prescribe the correct treatment.
- 
+
+
+## Clone the Repository
+To get the code required:
+```
+git clone https://github.com/strayeroliver/oligodendroglioma_project.git
+cd oligodendroglioma_project
+```
+
 ## Prerequisites/Setup
 
 Create and activate a virtual environment:  
   ```
-   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-   bash Miniconda3-latest-Linux-x86_64.sh
-```
-Then restart your teminal:
-```
-   conda create -n oligodendroglioma python=3.11
-   conda activate oligodendroglioma
-   ```
-
-Install required python packages:  
-```
-pip install numpy pandas scipy matplotlib seaborn scikit-learn lifelines gseapy
+   python3 -m venv oligodendroglioma
+   source myenv/bin/activate
+   pip install numpy pandas scipy matplotlib seaborn scikit-learn lifelines gseapy
 ```
 
-You will also need R for this project, so:
+
+You will also need R, so:
+
 ```
 sudo apt update
 sudo apt install r-base r-base-dev -y
@@ -40,19 +41,13 @@ And once inside R, inside the terminal:
 install.packages(c("glmnet", "survival", "readr"))
 ```
 
-
 ## Accessing Data
 
 The data used is within the TCGA-LGG and CGGA databases. You can download publicly, but due to privacy reasons I cannot attach them myself. 
 
 There are instructions in data_README.md.
 
-## Clone the Repository
-To get the code and data required:
-```
-git clone https://github.com/strayeroliver/oligodendroglioma_project.git
-cd oligodendroglioma_project
-```
+
 ## Running the Analysis
 To follow along with my journey, simply run the notebooks in the following order:
 
