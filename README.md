@@ -49,7 +49,7 @@ There are instructions in data_README.md.
 
 
 ## Running the Analysis
-To follow along with my journey, simply run the notebooks in the following order:
+To follow along with my journey, simply run the notebooks in the following order (DATA MUST BE ACHIEVED FIRST, data_README.md):
 
 ```
 python notebooks/data_loading_01.py
@@ -62,4 +62,14 @@ python notebooks/...
 
 And so forth.  
 Rscripts are only needed if you would like to see the process of doing LASSO-cox and how I got my values.
+
+## Presentation + Paper
+
+To view the Presentation, download the .odp file. 
+
+To view the Paper, there are two options.
+
+1. Go to overleaf.com and create an account, create a blank project. Then, delete the default placeholder files. Upload the .tex file and all the png's inside the folder. Recompile to view.
+
+2. On linux, install texlive-full inside the terminal. Download and install TeXstudio or TeXmaker. Open the LaTeX editor, file, open .tex file and compile.
 
