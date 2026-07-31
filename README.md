@@ -73,3 +73,11 @@ To view the Paper, there are two options.
 
 2. On linux, install texlive-full inside the terminal. Download and install TeXstudio or TeXmaker. Open the LaTeX editor, file, open .tex file and compile.
 
+Or to do it all in terminal:
+
+```
+  sudo apt-get install texlive-latex-base
+  sudo apt update && sudo apt install texlive-latex-extra
+  cd Paper/
+  pdflatex Oligodendroglioma_paper.tex
+```
