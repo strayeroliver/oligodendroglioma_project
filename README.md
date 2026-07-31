@@ -25,7 +25,7 @@ cd oligodendroglioma_project
 Create and activate a virtual environment:  
   ```
    python3 -m venv oligodendroglioma
-   source myenv/bin/activate
+   source oligodendroglioma/bin/activate
    pip install numpy pandas scipy matplotlib seaborn scikit-learn lifelines gseapy
 ```
 
